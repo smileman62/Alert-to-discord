@@ -24,7 +24,7 @@ async def pic(ctx):
     with open('./cache.jpg','rb') as f:
         pic=discord.File(f)
         await ctx.send(file=pic)
-        await ctx.send('File send checked')
+        await ctx.send('File send checkeda')
 
 print(token_discord.token_dis)
 app.run(token_discord.token_dis)

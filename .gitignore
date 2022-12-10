@@ -1,7 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-
+/token_discord.py
 token_discord.py
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider

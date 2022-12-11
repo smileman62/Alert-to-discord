@@ -27,9 +27,42 @@
 ---
 
 ## Feature
-(1) It recognizes faces through webcams.<br>
-(2) Show "unknown" if you are not registered<br>
-(3) If unknown, send alert via discode bot
+### (1) It recognizes faces through webcams.
+```
+    # show the frame
+    cv2.imshow("Frame", frame)
+    key = cv2.waitKey(1) & 0xFF
+    if count==1: #if face is found, save as "cache.jpg"
+        cv2.imwrite('./cache.jpg',frame)
+        break
+```
+### (2) Check if the faces match to the pictures in "Knows" directory.
+```
+    # See if the face is a match for the known face(s)
+    distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
+    min_value = min(distances)
+
+    # tolerance: How much distance between faces to consider it a match. Lower is more strict.
+    # 0.6 is typical best performance.
+    name = "Unknown"
+    if min_value < 0.6:
+        index = np.argmin(distances)
+        name = self.known_face_names[index]
+```
+### (3) Send alert via discode bot
+```
+    if int(now - prev) > 10:
+        if os.path.exists('./cache.jpg'):
+            os.remove('./cache.jpg')
+
+        cv2.imwrite('./cache.jpg', frame)
+        with open('./cache.jpg', 'rb') as f:
+            pic = discord.File(f)
+            await ctx.send(file=pic)
+            await ctx.send('Safety Alert!')
+        prev = now
+        os.remove('./cache.jpg')
+```
 ---
 ## NOTE
 - You must create **Token_discord.py** and put the token value of the discode bot in the token_dis value. For security reasons, **Never expose a bot's token** to the public Internet.

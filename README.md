@@ -16,16 +16,18 @@
 |김준혁|
 |김진성|
 |김태우|
+![Gachon][logo]
+
+[logo]: /README_image/gachon.jpg?raw=true "Gachon."
 ---
 
 ## Purpose
 - Alert-To-Discord can distinguishes unknowns and registered people for security.
+
 - This project can be used in some private spaces such as workplace
 
 
-![Kayak][logo]
 
-[logo]: /README_image/gachon.jpg?raw=true "Gachon."
 
 
 

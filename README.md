@@ -74,9 +74,9 @@
 
 ### (4) Example of using this program.
 
-![hello][hello]
+![Example][ex]
 
-[hello]: /README_image/taewoo2.png?raw=true "Example."
+[ex]: /README_image/taewoo2.png?raw=true "Example."
 
 
 
@@ -89,7 +89,7 @@
 
 - When creating a Discord bot, **PRESENCE INTENT, SERVER MEMBERS INTENT, and MESSAGE CONTENT INTENT** must be enabled. Additional permission assignments can cause security issues.
 ---
-## Known issues
+## Known issues ![warning][warning]
 - When the Face detect alert function is running, the record api turns off the gateway at certain times. I think it's to prevent wasting resources when there's no input. However, there seems to be no problem, seeing that the message is sent normally when it occurs.
 
 - If *Face recognition* is not properly performed, an error may occur.
@@ -106,7 +106,7 @@
 - Verify that the webcam is connected, and run record_bot_sender.py. When the Done. message appears in the Console, verify that the bot is online in the discode.
 - **!start** command to start webcam monitoring.
 
-
+[warning]: /README_image/warning_sign.jpg?raw=true "warning."
 
 
 

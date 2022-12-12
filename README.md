@@ -25,7 +25,7 @@
 
 ![Kayak][logo]
 
-[logo]: /README_image/taewoo2.png?raw=true "Example."
+[logo]: /README_image/gachon.jpg?raw=true "Gachon."
 
 
 
@@ -74,7 +74,7 @@
 
 ![hello][hello]
 
-[hello]: https://github.com/chungyo/Alert-to-discord/blob/main/knowns/Taewoo.jpg?raw=true "taewoo."
+[hello]: /README_image/taewoo2.png?raw=true "Example."
 
 
 

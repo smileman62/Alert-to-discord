@@ -19,7 +19,7 @@
 ![Gachon][logo]
 
 [logo]: /README_image/gachon.jpg?raw=true "Gachon."
----
+
 
 ## Purpose
 - Alert-To-Discord can distinguishes unknowns and registered people for security.
